@@ -1,77 +1,137 @@
 <h1 align="center">🌾 Agricultural Advisory Assistant for Farmers</h1>
-<p align="center">
-  <b>KrishiMitra AI — An intelligent farming companion for Indian farmers</b><br/>
-  Crop disease detection · Weather forecasting · Market prices · Smart farming advice
-</p>
+# 🌾 KrishiMitra AI - Smart Farming Assistant
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Python-3.10+-blue?style=flat-square&logo=python"/>
-  <img src="https://img.shields.io/badge/FastAPI-Backend-009688?style=flat-square&logo=fastapi"/>
-  <img src="https://img.shields.io/badge/Deep%20Learning-MobileNetV2-orange?style=flat-square&logo=tensorflow"/>
-  <img src="https://img.shields.io/badge/License-MIT-green?style=flat-square"/>
-</p>
+[![Python](https://img.shields.io/badge/Python-3.12-blue.svg)](https://www.python.org/)
+[![FastAPI](https://img.shields.io/badge/FastAPI-0.104-green.svg)](https://fastapi.tiangolo.com/)
+[![React](https://img.shields.io/badge/React-18.2-blue.svg)](https://reactjs.org/)
+[![TensorFlow](https://img.shields.io/badge/TensorFlow-2.16-orange.svg)](https://tensorflow.org/)
+[![License](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Kaggle](https://img.shields.io/badge/Kaggle-Dataset-20beff.svg)](https://www.kaggle.com/datasets/emmarex/plantdisease)
 
----
+> **KrishiMitra AI** (Hindi: Farmer's Friend) — An intelligent farming companion for Indian farmers
 
-## 🧠 About the Project
-
-**Agricultural Advisory Assistant for Farmers** is an end-to-end AI platform, branded as **KrishiMitra** (Hindi: *Farmer's Friend*), built to empower Indian farmers with modern technology. Farmers can upload a photo of a diseased crop leaf, get an instant AI diagnosis, check live weather and mandi prices, and receive actionable farming advice — all in one place.
-
-> Built with the goal of bridging the technology gap for rural and semi-urban farmers across India.
+**Crop Disease Detection · Weather Forecasting · Market Prices · Smart Farming Advice**
 
 ---
 
-## ✨ Features
+## 📌 **Live Demo**
 
-| Feature | Description |
-|--------|-------------|
-| 🔬 **Crop Disease Detection** | Upload a leaf image → MobileNetV2 model identifies the disease and suggests treatment |
-| 🌦️ **Weather Forecasting** | Location-based weather data to plan sowing, irrigation, and harvesting |
-| 📈 **Market (Mandi) Prices** | Live commodity prices to help farmers sell at the right time |
-| 🤖 **AI Farming Advice** | Intelligent recommendations based on crop, season, and soil conditions |
-
----
-
-## 🏗️ Project Structure
-
-<img width="900" height="366" alt="image" src="https://github.com/user-attachments/assets/752e6b1a-f4dc-4af4-81ae-99338b54a0f3" />
----
-
-## 🤖 Model Details
-
-- **Architecture:** MobileNetV2 (Transfer Learning)
-- **Task:** Multi-class image classification (crop leaf diseases)
-- **Dataset:** PlantVillage / Mendeley Crop Disease Dataset
-- **Framework:** TensorFlow / Keras
-- **Serving:** FastAPI REST endpoint (`/predict`)
+| Component | URL |
+|-----------|-----|
+| **Frontend** | https://kashinathbiradar123.github.io/krishimitra-ai/ |
+| **Backend API** | https://krishimitra-ai-backend.onrender.com/docs |
+| **GitHub** | https://github.com/KashinathBiradar123/krishimitra-ai |
 
 ---
 
-## 🛠️ Tech Stack
+## 🧠 **About the Project**
 
-**Backend**
-- Python 3.10+
-- FastAPI
-- TensorFlow / Keras (MobileNetV2)
-- Uvicorn
+**KrishiMitra AI** is an end-to-end AI platform built to empower Indian farmers with modern technology. Farmers can:
 
-**Frontend**
-- HTML / CSS / JavaScript
+- 📸 **Upload a photo** of a diseased crop leaf → Get instant AI diagnosis
+- 🌦️ **Check live weather** → Plan sowing, irrigation, and harvesting
+- 💰 **View mandi prices** → Find the best market rates
+- 🤖 **Ask farming questions** → Receive actionable advice
 
-**APIs Used**
-- OpenWeatherMap (weather forecasting)
-- Agmarknet / custom scraper (mandi/market prices)
+Built with the goal of **bridging the technology gap for rural and semi-urban farmers across India**.
 
 ---
 
-## 🚀 Getting Started
+## ✨ **Features**
 
-### 1. Clone the repository
+| Feature | Description | Status |
+|---------|-------------|--------|
+| 🔬 **Crop Disease Detection** | Upload leaf image → MobileNetV2 model identifies disease (87% accuracy) | ✅ Complete |
+| 🌦️ **Weather Forecasting** | 7-day location-based weather with farming advice | ✅ Complete |
+| 📈 **Market (Mandi) Prices** | Live commodity prices with best price highlighting 👑 | ✅ Complete |
+| 🤖 **AI Farming Advice** | Intelligent chatbot for crop, pest, fertilizer questions | ✅ Complete |
+| 🌓 **Dark/Light Mode** | User-friendly theme toggle for day/night usage | ✅ Complete |
+| 📱 **Mobile Responsive** | Works on all devices (phone, tablet, desktop) | ✅ Complete |
+
+---
+
+## 🏗️ **Project Structure**
+<img width="700" height="730" alt="image" src="https://github.com/user-attachments/assets/9013418a-cb77-46e8-80d9-26d20192d18a" />
+<img width="640" height="890" alt="image" src="https://github.com/user-attachments/assets/6bb6ab41-130b-43a2-9b38-85eb13ab4eb1" />
+<img width="817" height="399" alt="image" src="https://github.com/user-attachments/assets/4da04e75-ca7e-4a69-812e-bc126e063fee" />
+
+---
+
+## 🤖 **Model Details**
+
+| Parameter | Value |
+|-----------|-------|
+| **Architecture** | MobileNetV2 (Transfer Learning) |
+| **Task** | Multi-class image classification (crop leaf diseases) |
+| **Dataset** | PlantVillage Dataset (20,638 images, 15 classes) |
+| **Framework** | TensorFlow 2.16 / Keras |
+| **Input Size** | 224 x 224 pixels |
+| **Output** | Disease name + Confidence score + Treatment |
+| **Accuracy** | **87.14%** on validation set |
+| **Model Size** | 13.4 MB |
+| **Inference Time** | <2 seconds on CPU |
+
+### **Supported Crops & Diseases**
+
+| Crop | Diseases Detected |
+|------|-------------------|
+| **Tomato** | Bacterial spot, Early blight, Late blight, Leaf Mold, Septoria leaf spot, Spider mites, Target Spot, Yellow Leaf Curl Virus, Mosaic virus, Healthy |
+| **Potato** | Early blight, Late blight, Healthy |
+| **Pepper** | Bacterial spot, Healthy |
+
+---
+
+## 🛠️ **Tech Stack**
+
+### **Backend**
+
+| Tool | Purpose |
+|------|---------|
+| **Python 3.12** | Main programming language |
+| **FastAPI** | High-performance web framework |
+| **TensorFlow/Keras** | ML model training & inference |
+| **MobileNetV2** | Pre-trained CNN architecture |
+| **OpenCV / PIL** | Image preprocessing |
+| **Uvicorn** | ASGI server |
+| **JWT** | Authentication |
+| **bcrypt** | Password hashing |
+
+### **Frontend**
+
+| Tool | Purpose |
+|------|---------|
+| **React 18** | UI framework |
+| **Vite** | Build tool (fast development) |
+| **React Router** | Navigation |
+| **Context API** | State management (dark mode, auth) |
+| **CSS3** | Custom styling with dark/light themes |
+| **Axios** | HTTP requests |
+
+### **External APIs**
+
+| API | Purpose |
+|-----|---------|
+| **OpenWeatherMap** | Weather forecasts |
+| **Kaggle** | PlantVillage dataset |
+| **Google Drive** | Pre-trained model hosting |
+
+---
+
+## 🚀 **Getting Started**
+
+### **Prerequisites**
+
+- Python 3.12+
+- Node.js 18+
+- npm or yarn
+- Git
+
+### **Installation**
+
+#### **1. Clone the repository**
 ```bash
 git clone https://github.com/KashinathBiradar123/krishimitra-ai.git
 cd krishimitra-ai
-```
-
 ### 2. Set up the backend
 ```bash
 cd backend
@@ -91,9 +151,6 @@ Open `frontend/index.html` in your browser, or serve it locally:
 cd frontend
 npx serve .
 ```
-
----
-
 ## 📓 Notebooks
 
 The `notebooks/` folder contains:
@@ -120,6 +177,5 @@ The `notebooks/` folder contains:
 
 ---
 
-## 📄 License
 
-This project is licensed under the [MIT License](LICENSE).
+
