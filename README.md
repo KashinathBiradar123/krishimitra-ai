@@ -116,7 +116,7 @@ The `notebooks/` folder contains:
 ## 🙋 Author
 
 **Kashinath Biradar**  
-[GitHub](https://github.com/KashinathBiradar123) · Made with ❤️ for Indian farmers
+[GitHub](https://github.com/KashinathBiradar123) · Made with for Indian farmers
 
 ---
 
