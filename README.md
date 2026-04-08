@@ -171,7 +171,7 @@ The `notebooks/` folder contains:
 ---
 
 ## 🙋 Author
-
+**Mahek Khatib**
 **Kashinath Biradar**  
 [GitHub](https://github.com/KashinathBiradar123) · Made with for Indian farmers
 
