@@ -21,6 +21,7 @@
 | **Frontend** | https://kashinathbiradar123.github.io/krishimitra-ai/ |
 | **Backend API** | https://krishimitra-ai-backend.onrender.com/docs |
 | **GitHub** | https://github.com/KashinathBiradar123/krishimitra-ai |
+| **Website** | https://krishimitra-ai-beta.vercel.app |
 
 ---
 
